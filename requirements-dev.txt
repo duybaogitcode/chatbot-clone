@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest==9.1.1
+gradio==6.28.0  # chat UI (chat.py), not needed by the daily job
