@@ -2,7 +2,7 @@ name: Daily sync
 
 on:
   schedule:
-    - cron: "0 2 * * *" # every day at 02:00 UTC
+    - cron: "17 2 * * *" # every day at 02:17 UTC (off the hour: GitHub drops many top-of-hour schedules)
   workflow_dispatch: # "Run workflow" button for manual runs
   push:
     branches: [main] # tests only (the sync job is skipped on push)
